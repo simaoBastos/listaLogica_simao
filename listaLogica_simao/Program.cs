@@ -1,5 +1,5 @@
 ﻿#region Nivel 1
-#region Atividade 1
+#region Atividade 1 - Calculadora de Média Simples
 //Console.WriteLine("Insira sua primeira nota:");
 //double nota1 = Convert.ToDouble(Console.ReadLine());
 //Console.WriteLine("Insira sua segunds nota:");
@@ -12,7 +12,7 @@
 //Console.WriteLine($"Sua média é {media}.");
 #endregion
 
-#region Atividade 2
+#region Atividade 2 - Conversor de Idade
 //Console.WriteLine("Qual a sua idade?");
 //double idade = Convert.ToDouble(Console.ReadLine());
 
@@ -21,7 +21,7 @@
 //Console.WriteLine($"Você está vivo há aproximadamente {idadeDias} dias!");
 #endregion
 
-#region Atividade 3
+#region Atividade 3 - Troca de Valores
 //Console.WriteLine("Insira o primeiro valor:");
 //int A = Convert.ToInt32(Console.ReadLine());
 //Console.WriteLine("Insira o segundo valor:");
