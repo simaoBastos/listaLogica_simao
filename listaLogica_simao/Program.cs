@@ -98,3 +98,16 @@
 
 
 #endregion
+
+#region Nivel 3
+#region Atividade 1
+    Console.WriteLine("Insira um número inteiro:");
+#endregion
+#region Atividade 2
+
+#endregion
+#region Atividade 3
+
+#endregion
+
+#endregion
