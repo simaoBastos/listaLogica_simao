@@ -136,7 +136,16 @@
 #endregion
 
 #region Atividade 3 - Tabuada Personalizada
-   
+Console.WriteLine("Insira um número:");
+int num = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"{num}x{i}={num * i}");
+}
+
 #endregion
 
 #endregion
+
+
