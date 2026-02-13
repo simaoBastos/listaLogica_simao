@@ -163,10 +163,28 @@
 #region Nível 4 - Coleções (Arrays e Listas)
 
 #region Atividade 1 - Inversão de Array
-string[] names = { "Joao", "Carlos", "Daniel", "Dracula", "Whatsapp" };
-Console.WriteLine($"Array original:{string.Join(", ", names)}.");
-Array.Reverse(names);
-Console.WriteLine($"Array reversa:{string.Join(", ", names)}.");
+//string[] names = { "Joao", "Carlos", "Daniel", "Dracula", "Whatsapp" };
+//Console.WriteLine($"Array original:{string.Join(", ", names)}.");
+//Array.Reverse(names);
+//Console.WriteLine($"Array reversa:{string.Join(", ", names)}.");
+#endregion
+
+#region Atividade 2 - Busca e Contagem em Lista (foreach)
+List <string> cores = new List<string> {"Azul", "Verde", "Azul", "Azul", "Amarelo", "Vermelho", };
+int contador = 0;
+
+Console.WriteLine("Insira uma cor (Azul, Verde ou Vermelho)");
+string cor = Console.ReadLine();
+foreach (string coresRepeticao in cores)
+{
+    if (coresRepeticao.ToLower() == cor.ToLower())
+    {
+        contador++; 
+    }
+
+}
+
+Console.WriteLine($"A cor {cor} aparece {contador} vezes.");
 #endregion
 
 #endregion
