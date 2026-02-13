@@ -163,7 +163,7 @@
 #region Nível 4 - Coleções (Arrays e Listas)
 
 #region Atividade 1 - Inversão de Array
-string[] names = { "Joao", "Carlos", "Daniel", "Dracula", "Misoginia" };
+string[] names = { "Joao", "Carlos", "Daniel", "Dracula", "Whatsapp" };
 Console.WriteLine($"Array original:{string.Join(", ", names)}.");
 Array.Reverse(names);
 Console.WriteLine($"Array reversa:{string.Join(", ", names)}.");
