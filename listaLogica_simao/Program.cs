@@ -100,8 +100,18 @@
 #endregion
 
 #region Nivel 3
-#region Atividade 1
-    Console.WriteLine("Insira um número inteiro:");
+#region Atividade 1 - Contagem regressiva
+Console.WriteLine("Insira um número para iniciar a contagem:");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Contagem regressiva:");
+
+for (int i = num; i > 0; i--)
+{
+    Console.WriteLine(i);
+    Thread.Sleep(1000);
+}
+
+Console.WriteLine("Lançar!");
 #endregion
 #region Atividade 2
 
