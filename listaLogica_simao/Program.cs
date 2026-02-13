@@ -136,13 +136,24 @@
 #endregion
 
 #region Atividade 3 - Tabuada Personalizada
-Console.WriteLine("Insira um número:");
-int num = Convert.ToInt32(Console.ReadLine());
-
-for (int i = 1; i <= 10; i++)
-{
-    Console.WriteLine($"{num}x{i}={num * i}");
-}
+//Console.WriteLine("Insira um número:");
+//int num = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Até que número você quer calculá-lo?");
+//int limit = Convert.ToInt32(Console.ReadLine());
+//if (limit < 0)
+//{
+//    for (int i = 0; i >= limit; i--)
+//    {
+//        Console.WriteLine($"{num}x{i} = {num * i}");
+//    }
+//}
+//else
+//{
+//for (int i = 1; i <= limit; i++)
+//{
+//    Console.WriteLine($"{num}x{i} = {num * i}");
+//}
+//}
 
 #endregion
 
