@@ -1,4 +1,5 @@
-﻿#region Nivel 1
+﻿#region Nivel 1 - Variáveis e Operações Básicas
+
 #region Atividade 1 - Calculadora de Média Simples
 //Console.WriteLine("Insira sua primeira nota:");
 //double nota1 = Convert.ToDouble(Console.ReadLine());
@@ -40,7 +41,7 @@
 
 #endregion
 
-#region Nivel 2
+#region Nivel 2 - Estruturas Condicionais (if, else if, else)
 
 #region Atividade 1 - Verificador de Maioridade
 //Console.WriteLine("Insira sua idade:");
@@ -100,7 +101,7 @@
 
 #endregion
 
-#region Nivel 3
+#region Nivel 3 - Estruturas de Repetição (Loops)
 
 #region Atividade 1 - Contagem regressiva
 //Console.WriteLine("Insira um número para iniciar a contagem:");
@@ -155,6 +156,17 @@
 //}
 //}
 
+#endregion
+
+#endregion
+
+#region Nível 4 - Coleções (Arrays e Listas)
+
+#region Atividade 1 - Inversão de Array
+string[] names = { "Joao", "Carlos", "Daniel", "Dracula", "Misoginia" };
+Console.WriteLine($"Array original:{string.Join(", ", names)}.");
+Array.Reverse(names);
+Console.WriteLine($"Array reversa:{string.Join(", ", names)}.");
 #endregion
 
 #endregion
