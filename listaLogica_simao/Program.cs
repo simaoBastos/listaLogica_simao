@@ -37,10 +37,12 @@
 
 //Console.WriteLine($"Valor A: {A}\nValor B: {B}");
 #endregion
+
 #endregion
 
 #region Nivel 2
-#region Atividade 1
+
+#region Atividade 1 - Verificador de Maioridade
 //Console.WriteLine("Insira sua idade:");
 //int idade = Convert.ToInt32(Console.ReadLine());
 
@@ -53,7 +55,7 @@
 //} 
 #endregion
 
-#region Atividade 2
+#region Atividade 2 - Classificador de Números
 //Console.WriteLine("Insira um número:");
 //int num = Convert.ToInt32(Console.ReadLine());
 
@@ -75,7 +77,7 @@
 
 #endregion
 
-#region Atividade 3
+#region Atividade 3 - Validador de Login Simples
 //string usuario_correto = "admin";
 //string senha_correta = "12345";
 
@@ -96,28 +98,45 @@
 
 #endregion
 
-
 #endregion
 
 #region Nivel 3
+
 #region Atividade 1 - Contagem regressiva
-Console.WriteLine("Insira um número para iniciar a contagem:");
-int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Contagem regressiva:");
+//Console.WriteLine("Insira um número para iniciar a contagem:");
+//int num = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Contagem regressiva:");
 
-for (int i = num; i > 0; i--)
-{
-    Console.WriteLine(i);
-    Thread.Sleep(1000);
-}
+//for (int i = num; i > 0; i--)
+//{
+//    Console.WriteLine(i);
+//    Thread.Sleep(1000);
+//}
 
-Console.WriteLine("Lançar!");
+//Console.WriteLine("Lançar!");
 #endregion
-#region Atividade 2
+
+#region Atividade 2 - Soma de ímpares
+//Console.WriteLine("Insira um número inteiro:");
+//int numBase = Convert.ToInt32(Console.ReadLine());
+//int numSoma = 0;
+
+//while (numBase != 0)
+//{
+//    if (numBase % 2 != 0)
+//    {
+//        numSoma += numBase;
+//    }
+//    Console.WriteLine("Insira mais um número inteiro:");
+//    numBase = Convert.ToInt32(Console.ReadLine());
+//}
+
+//Console.WriteLine($"A soma dos números impares citados é {numSoma}.");
 
 #endregion
-#region Atividade 3
 
+#region Atividade 3 - Tabuada Personalizada
+   
 #endregion
 
 #endregion
