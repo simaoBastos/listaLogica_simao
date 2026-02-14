@@ -13,7 +13,7 @@ while (escolhaNivel != 5)
         "3. Nível 3 - Estruturas de Repetição (Loops)\n" +
         "4. Nível 4 - Coleções (Arrays e Listas)\n" +
         "5. Sair");
-    Console.Write("Atividade: ");
+    Console.Write("Opção Escolhida: ");
     escolhaNivel = Convert.ToInt32(Console.ReadLine());
 
     Console.WriteLine(); //Pulo de linha para melhor visualização no console;
@@ -26,7 +26,7 @@ while (escolhaNivel != 5)
                 "2. Conversor de Idade\n" +
                 "3. Troca de Valores\n" +
                 "4.Voltar para a escolha de nível");
-            Console.Write("Opção: ");
+            Console.Write("Opção Escolhida: ");
             escolhaAtividade = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear(); //Limpa o console para melhor visualização da atividade escolhida;
@@ -41,14 +41,14 @@ while (escolhaNivel != 5)
 
                     Console.WriteLine("Insira sua primeira nota:");
                     double nota1 = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Insira sua segunds nota:");
+                    Console.WriteLine("Insira sua segunda nota:");
                     double nota2 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Insira sua terceira nota:");
                     double nota3 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Insira sua quarta nota:");
                     double nota4 = Convert.ToDouble(Console.ReadLine());
                     double media = (nota1 + nota2 + nota3 + nota4) / 3;
-                    Console.WriteLine($"Sua média é {media}.");
+                    Console.WriteLine($"Sua média é {media.ToString("F2")}.");
                     #endregion
                     break;
                 case 2:
@@ -99,7 +99,7 @@ while (escolhaNivel != 5)
                 "2. Classificador de Números\n" +
                 "3. Validador de Login Simples\n" +
                 "4.Voltar para a escolha de nível");
-            Console.Write("Opção: ");
+            Console.Write("Opção Escolhida: ");
             escolhaAtividade = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear(); //Limpa o console para melhor visualização da atividade escolhida;
@@ -188,7 +188,7 @@ while (escolhaNivel != 5)
                 "2. Soma de ímpares\n" +
                 "3. Tabuada Personalizada\n" +
                 "4.Voltar para a escolha de nível");
-            Console.Write("Opção: ");
+            Console.Write("Opção Escolhida: ");
             escolhaAtividade = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear(); //Limpa o console para melhor visualização da atividade escolhida;
@@ -275,7 +275,7 @@ while (escolhaNivel != 5)
                 "2. Busca e Contagem em Lista\n" +
                 "3. Gerenciador de Tarefas Simples\n" +
                 "4.Voltar para a escolha de nível");
-            Console.Write("Opção: ");
+            Console.Write("Opção Escolhida: ");
             escolhaAtividade = Convert.ToInt32(Console.ReadLine());
 
             Console.Clear(); //Limpa o console para melhor visualização da atividade escolhida;
@@ -287,22 +287,66 @@ while (escolhaNivel != 5)
                     Console.ForegroundColor = ConsoleColor.Red ;
                     Console.WriteLine("=====N4A1 - Inversão de Array=====");
                     Console.ResetColor();
-                    string[] names = { "Joao", "Carlos", "Daniel", "Dracula", "Whatsapp" };
-                    Console.WriteLine($"Array original:{string.Join(", ", names)}.");
+                    string[] names = new string[5];
+
+                    for (int i = 0; i < names.Length; i++)
+                    {
+                        Console.Write($"Insira o {i+1}º de {names.Length} nomes: ");
+                        names[i]=Console.ReadLine();
+                    } 
+
+                    Console.WriteLine(); //Pulo de linha para melhor visualização no console;
+
+                    Console.WriteLine($"Array original: {string.Join(", ", names)}.");
                     Array.Reverse(names);
-                    Console.WriteLine($"Array reversa:{string.Join(", ", names)}.");
+                    Console.WriteLine($"Array reversa: {string.Join(", ", names)}.");
                     #endregion
                     break;
                 case 2:
                     #region Atividade 2 - Busca e Contagem em Lista (foreach)
+
+                    List<string> cores = new List<string>();
+
+                        int escolhaCor = 0;
+                        while (escolhaCor != 2)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("=====N4A2 - Busca e Contagem em Lista====");
+                        Console.ResetColor();
+                        Console.WriteLine("Escolha uma opção:\n" +
+                            "1. Adicionar cor\n" +
+                            "2. Contar cor e sair");
+                        escolhaCor = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(); //Pulo de linha para melhor visualização no console;
+
+                        switch (escolhaCor)
+                        {
+                            case 1:
+                                Console.WriteLine("Insira uma cor:");
+                                cores.Add(Console.ReadLine());
+
+                                Console.Clear();
+
+                                break;
+                            case 2:
+                                Console.Clear();
+                                
+                                break;
+                            default:
+                                Console.WriteLine("Opção inválida, tente novamente.");
+                                break;
+                        }
+                    }
+
+                    int contador = 0;
+
+                    HashSet<string> coresUnicas = new HashSet<string>(cores);
+
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("=====N4A2 - Busca e Contagem em Lista====");
                     Console.ResetColor();
 
-                    List<string> cores = new List<string> { "Azul", "Verde", "Azul", "Azul", "Amarelo", "Vermelho", };
-                    int contador = 0;
-
-                    Console.WriteLine("Insira uma cor (Azul, Verde ou Vermelho)");
+                    Console.WriteLine($"Insira uma cor ({string.Join(", ", coresUnicas)})");
                     string cor = Console.ReadLine();
                     foreach (string coresRepeticao in cores)
                     {
